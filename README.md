@@ -1,6 +1,6 @@
 # PROJECT 01 - UDACITY - TIM MEIJOME
 udacity project 01 by tim meijome
-creates website showing the newest released movies. each movie has a poster, a trailer, and an overview.
+creates website showing newly released movies, with poster, trailer, and overview for each.
 
 ## about
 retrieve_movies.py
