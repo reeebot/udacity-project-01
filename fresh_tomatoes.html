@@ -6,14 +6,10 @@
     <title>In Theaters!</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/
-        bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/
-        bootstrap/3.3.7/css/bootstrap-theme.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/
-        jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/
-        bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <style type="text/css" media="screen">
         body {
@@ -79,31 +75,26 @@
     <script>
         // bootstrap tooltip
         $(document).ready(function(){
-            $('[data-toggle="tooltip"]').tooltip({placement:
-                "auto bottom", animation: true,
-                delay: {show: 200, hide: 400}, trigger: "hover"});
+            $('[data-toggle="tooltip"]').tooltip({placement: "auto bottom", animation: true, delay: {show: 200, hide: 400}, trigger: "hover"});
         });
     </script>
     <script type="text/javascript" charset="utf-8">
         // Pause the video when the modal is closed
-        $(document).on('click', '.hanging-close, .modal-backdrop,
-            .modal', function (event) {
-        // Remove the src so the player itself gets removed, as this is the only
-        // reliable way to ensure the video stops playing in IE
-        $("#trailer-video-container").empty();
+        $(document).on('click', '.hanging-close, .modal-backdrop, .modal', function (event) {
+            // Remove the src so the player itself gets removed, as this is the only
+            // reliable way to ensure the video stops playing in IE
+            $("#trailer-video-container").empty();
         });
         // Start playing the video whenever the trailer modal is opened
         $(document).on('click', '.movie-tile', function (event) {
             var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
-            var sourceUrl = 'http://www.youtube.com/embed/' +
-                trailerYouTubeId + '?autoplay=1&html5=1';
-            $("#trailer-video-container").empty().append($("<iframe></iframe>",
-                {
-                  'id': 'trailer-video',
-                  'type': 'text-html',
-                  'src': sourceUrl,
-                  'frameborder': 0
-                }));
+            var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
+            $("#trailer-video-container").empty().append($("<iframe></iframe>", {
+              'id': 'trailer-video',
+              'type': 'text-html',
+              'src': sourceUrl,
+              'frameborder': 0
+            }));
         });
         // Animate in the movies when the page loads
         $(document).ready(function () {
@@ -119,10 +110,8 @@
     <div class="modal" id="trailer">
       <div class="modal-dialog">
         <div class="modal-content">
-          <a href="#" class="hanging-close" data-dismiss="modal"
-          aria-hidden="true">
-            <img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_
-            MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>
+          <a href="#" class="hanging-close" data-dismiss="modal" aria-hidden="true">
+            <img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>
           </a>
           <div class="scale-media" id="trailer-video-container">
           </div>
@@ -142,144 +131,104 @@
     </div>
     <div class="container">
       
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="
-FnCdOQsX5kc" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="FnCdOQsX5kc" data-toggle="modal" data-target="#trailer">
     <img src="https://image.tmdb.org/t/p/w500/9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg" width="220" height="342">
-    <a href="#" data-toggle="tooltip" title="In a small town in Maine, seven children known as The Losers Club come face to face with life problems, bullies and a monster that takes the shape of a clown called Pennywise."><h3>It
-    </h3></a>
+    <a href="#" data-toggle="tooltip" title="In a small town in Maine, seven children known as The Losers Club come face to face with life problems, bullies and a monster that takes the shape of a clown called Pennywise."><h3>It</h3></a>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="
-ue80QwXMRHg" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="ue80QwXMRHg" data-toggle="modal" data-target="#trailer">
     <img src="https://image.tmdb.org/t/p/w500/oSLd5GYGsiGgzDPKTwQh7wamO8t.jpg" width="220" height="342">
-    <a href="#" data-toggle="tooltip" title="Thor is imprisoned on the other side of the universe and finds himself in a race against time to get back to Asgard to stop Ragnarok, the prophecy of destruction to his homeworld and the end of Asgardian civilization, at the hands of an all-powerful new threat, the ruthless Hela."><h3>Thor: Ragnarok
-    </h3></a>
+    <a href="#" data-toggle="tooltip" title="Thor is imprisoned on the other side of the universe and finds himself in a race against time to get back to Asgard to stop Ragnarok, the prophecy of destruction to his homeworld and the end of Asgardian civilization, at the hands of an all-powerful new threat, the ruthless Hela."><h3>Thor: Ragnarok</h3></a>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="
-g_6yBZKj-eo" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="g_6yBZKj-eo" data-toggle="modal" data-target="#trailer">
     <img src="https://image.tmdb.org/t/p/w500/9rtrRGeRnL0JKtu9IMBWsmlmmZz.jpg" width="220" height="342">
-    <a href="#" data-toggle="tooltip" title="Fueled by his restored faith in humanity and inspired by Superman's selfless act, Bruce Wayne and Diana Prince assemble a team of metahumans consisting of Barry Allen, Arthur Curry, and Victor Stone to face the catastrophic threat of Steppenwolf and the Parademons who are on the hunt for three Mother Boxes on Earth."><h3>Justice League
-    </h3></a>
+    <a href="#" data-toggle="tooltip" title="Fueled by his restored faith in humanity and inspired by Superman's selfless act, Bruce Wayne and Diana Prince assemble a team of metahumans consisting of Barry Allen, Arthur Curry, and Victor Stone to face the catastrophic threat of Steppenwolf and the Parademons who are on the hunt for three Mother Boxes on Earth."><h3>Justice League</h3></a>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="
-Oi8-P3Wpba8" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="Oi8-P3Wpba8" data-toggle="modal" data-target="#trailer">
     <img src="https://image.tmdb.org/t/p/w500/cTaEIUYTt52ooq9quVbAQ7NpGwo.jpg" width="220" height="342">
-    <a href="#" data-toggle="tooltip" title="A college student relives the day of her murder over and over again as she tries to discover her killer's identity."><h3>Happy Death Day
-    </h3></a>
+    <a href="#" data-toggle="tooltip" title="A college student relives the day of her murder over and over again as she tries to discover her killer's identity."><h3>Happy Death Day</h3></a>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="
-vPP6aIw1vgY" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="vPP6aIw1vgY" data-toggle="modal" data-target="#trailer">
     <img src="https://image.tmdb.org/t/p/w500/zUbUtxiTdEgWnkXY945gtYYqBZ1.jpg" width="220" height="342">
-    <a href="#" data-toggle="tooltip" title="Dead bodies begin to turn up all over the city, each meeting their demise in a variety of grisly ways. All investigations begin to point the finger at deceased killer John Kramer."><h3>Jigsaw
-    </h3></a>
+    <a href="#" data-toggle="tooltip" title="Dead bodies begin to turn up all over the city, each meeting their demise in a variety of grisly ways. All investigations begin to point the finger at deceased killer John Kramer."><h3>Jigsaw</h3></a>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="
-mafJGrKvMIg" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="mafJGrKvMIg" data-toggle="modal" data-target="#trailer">
     <img src="https://image.tmdb.org/t/p/w500/wridRvGxDqGldhzAIh3IcZhHT5F.jpg" width="220" height="342">
-    <a href="#" data-toggle="tooltip" title="A young street magician is left to take care of his little sister after his mother's passing and turns to drug dealing in the Los Angeles party scene to keep a roof over their heads. When he gets into trouble with his supplier, his sister is kidnapped and he is forced to rely on both his sleight of hand and brilliant mind to save her."><h3>Sleight
-    </h3></a>
+    <a href="#" data-toggle="tooltip" title="A young street magician is left to take care of his little sister after his mother's passing and turns to drug dealing in the Los Angeles party scene to keep a roof over their heads. When he gets into trouble with his supplier, his sister is kidnapped and he is forced to rely on both his sleight of hand and brilliant mind to save her."><h3>Sleight</h3></a>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="
-jc86EFjLFV4" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="jc86EFjLFV4" data-toggle="modal" data-target="#trailer">
     <img src="https://image.tmdb.org/t/p/w500/q0R4crx2SehcEEQEkYObktdeFy.jpg" width="220" height="342">
-    <a href="#" data-toggle="tooltip" title="Minions Stuart, Kevin and Bob are recruited by Scarlet Overkill, a super-villain who, alongside her inventor husband Herb, hatches a plot to take over the world."><h3>Minions
-    </h3></a>
+    <a href="#" data-toggle="tooltip" title="Minions Stuart, Kevin and Bob are recruited by Scarlet Overkill, a super-villain who, alongside her inventor husband Herb, hatches a plot to take over the world."><h3>Minions</h3></a>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="
-huaGQdrkrK0" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="huaGQdrkrK0" data-toggle="modal" data-target="#trailer">
     <img src="https://image.tmdb.org/t/p/w500/rF2IoKL0IFmumEXQFUuB8LajTYP.jpg" width="220" height="342">
-    <a href="#" data-toggle="tooltip" title="Brad and Dusty must deal with their intrusive fathers during the holidays."><h3>Daddy's Home 2
-    </h3></a>
+    <a href="#" data-toggle="tooltip" title="Brad and Dusty must deal with their intrusive fathers during the holidays."><h3>Daddy's Home 2</h3></a>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="
-yDBFrQvfGlQ" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="yDBFrQvfGlQ" data-toggle="modal" data-target="#trailer">
     <img src="https://image.tmdb.org/t/p/w500/3vYhLLxrTtZLysXtIWktmd57Snv.jpg" width="220" height="342">
-    <a href="#" data-toggle="tooltip" title="Caesar and his apes are forced into a deadly conflict with an army of humans led by a ruthless Colonel. After the apes suffer unimaginable losses, Caesar wrestles with his darker instincts and begins his own mythic quest to avenge his kind. As the journey finally brings them face to face, Caesar and the Colonel are pitted against each other in an epic battle that will determine the fate of both their species and the future of the planet."><h3>War for the Planet of the Apes
-    </h3></a>
+    <a href="#" data-toggle="tooltip" title="Caesar and his apes are forced into a deadly conflict with an army of humans led by a ruthless Colonel. After the apes suffer unimaginable losses, Caesar wrestles with his darker instincts and begins his own mythic quest to avenge his kind. As the journey finally brings them face to face, Caesar and the Colonel are pitted against each other in an epic battle that will determine the fate of both their species and the future of the planet."><h3>War for the Planet of the Apes</h3></a>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="
-Mq4m3yAoW8E" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="Mq4m3yAoW8E" data-toggle="modal" data-target="#trailer">
     <img src="https://image.tmdb.org/t/p/w500/iBlfxlw8qwtUS0R8YjIU7JtM6LM.jpg" width="220" height="342">
-    <a href="#" data-toggle="tooltip" title="Genius Belgian detective Hercule Poirot investigates the murder of an American tycoon aboard the Orient Express train."><h3>Murder on the Orient Express
-    </h3></a>
+    <a href="#" data-toggle="tooltip" title="Genius Belgian detective Hercule Poirot investigates the murder of an American tycoon aboard the Orient Express train."><h3>Murder on the Orient Express</h3></a>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="
-rk-dF1lIbIg" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="rk-dF1lIbIg" data-toggle="modal" data-target="#trailer">
     <img src="https://image.tmdb.org/t/p/w500/ApYhuwBWzl29Oxe9JJsgL7qILbD.jpg" width="220" height="342">
-    <a href="#" data-toggle="tooltip" title="Following the events of Captain America: Civil War, Peter Parker, with the help of his mentor Tony Stark, tries to balance his life as an ordinary high school student in Queens, New York City, with fighting crime as his superhero alter ego Spider-Man as a new threat, the Vulture, emerges."><h3>Spider-Man: Homecoming
-    </h3></a>
+    <a href="#" data-toggle="tooltip" title="Following the events of Captain America: Civil War, Peter Parker, with the help of his mentor Tony Stark, tries to balance his life as an ordinary high school student in Queens, New York City, with fighting crime as his superhero alter ego Spider-Man as a new threat, the Vulture, emerges."><h3>Spider-Man: Homecoming</h3></a>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="
-c38r-SAnTWM" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="c38r-SAnTWM" data-toggle="modal" data-target="#trailer">
     <img src="https://image.tmdb.org/t/p/w500/tWqifoYuwLETmmasnGHO7xBjEtt.jpg" width="220" height="342">
-    <a href="#" data-toggle="tooltip" title="A live-action adaptation of Disney's version of the classic 'Beauty and the Beast' tale of a cursed prince and a beautiful young woman who helps him break the spell."><h3>Beauty and the Beast
-    </h3></a>
+    <a href="#" data-toggle="tooltip" title="A live-action adaptation of Disney's version of the classic 'Beauty and the Beast' tale of a cursed prince and a beautiful young woman who helps him break the spell."><h3>Beauty and the Beast</h3></a>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="
-CQFdGfwChtw" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="CQFdGfwChtw" data-toggle="modal" data-target="#trailer">
     <img src="https://image.tmdb.org/t/p/w500/e4DGlsc9g0h5AyoyvvAuIRnofN7.jpg" width="220" height="342">
-    <a href="#" data-toggle="tooltip" title="A teenager's attempts to bring a brilliant surgeon into his dysfunctional family take an unexpected turn."><h3>The Killing of a Sacred Deer
-    </h3></a>
+    <a href="#" data-toggle="tooltip" title="A teenager's attempts to bring a brilliant surgeon into his dysfunctional family take an unexpected turn."><h3>The Killing of a Sacred Deer</h3></a>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="
-OvgyXKDXdZY" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="OvgyXKDXdZY" data-toggle="modal" data-target="#trailer">
     <img src="https://image.tmdb.org/t/p/w500/9gLu47Zw5ertuFTZaxXOvNfy78T.jpg" width="220" height="342">
-    <a href="#" data-toggle="tooltip" title="The special bond that develops between plus-sized inflatable robot Baymax, and prodigy Hiro Hamada, who team up with a group of friends to form a band of high-tech heroes."><h3>Big Hero 6
-    </h3></a>
+    <a href="#" data-toggle="tooltip" title="The special bond that develops between plus-sized inflatable robot Baymax, and prodigy Hiro Hamada, who team up with a group of friends to form a band of high-tech heroes."><h3>Big Hero 6</h3></a>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="
-RllJtOw0USI" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="RllJtOw0USI" data-toggle="modal" data-target="#trailer">
     <img src="https://image.tmdb.org/t/p/w500/5vHssUeVe25bMrof1HyaPyWgaP.jpg" width="220" height="342">
-    <a href="#" data-toggle="tooltip" title="Ex-hitman John Wick comes out of retirement to track down the gangsters that took everything from him."><h3>John Wick
-    </h3></a>
+    <a href="#" data-toggle="tooltip" title="Ex-hitman John Wick comes out of retirement to track down the gangsters that took everything from him."><h3>John Wick</h3></a>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="
-_shrCoqWh9k" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="_shrCoqWh9k" data-toggle="modal" data-target="#trailer">
     <img src="https://image.tmdb.org/t/p/w500/jfIpMh79fGRqYJ6PwZLCntzgxlF.jpg" width="220" height="342">
-    <a href="#" data-toggle="tooltip" title="In the 28th century, Valerian and Laureline are special operatives charged with keeping order throughout the human territories. On assignment from the Minister of Defense, the two undertake a mission to Alpha, an ever-expanding metropolis where species from across the universe have converged over centuries to share knowledge, intelligence, and cultures. At the center of Alpha is a mysterious dark force which threatens the peaceful existence of the City of a Thousand Planets, and Valerian and Laureline must race to identify the menace and safeguard not just Alpha, but the future of the universe."><h3>Valerian and the City of a Thousand Planets
-    </h3></a>
+    <a href="#" data-toggle="tooltip" title="In the 28th century, Valerian and Laureline are special operatives charged with keeping order throughout the human territories. On assignment from the Minister of Defense, the two undertake a mission to Alpha, an ever-expanding metropolis where species from across the universe have converged over centuries to share knowledge, intelligence, and cultures. At the center of Alpha is a mysterious dark force which threatens the peaceful existence of the City of a Thousand Planets, and Valerian and Laureline must race to identify the menace and safeguard not just Alpha, but the future of the universe."><h3>Valerian and the City of a Thousand Planets</h3></a>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="
-1Q8fG0TtVAY" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="1Q8fG0TtVAY" data-toggle="modal" data-target="#trailer">
     <img src="https://image.tmdb.org/t/p/w500/imekS7f1OuHyUP2LAiTEM0zBzUz.jpg" width="220" height="342">
-    <a href="#" data-toggle="tooltip" title="An Amazon princess comes to the world of Man to become the greatest of the female superheroes."><h3>Wonder Woman
-    </h3></a>
+    <a href="#" data-toggle="tooltip" title="An Amazon princess comes to the world of Man to become the greatest of the female superheroes."><h3>Wonder Woman</h3></a>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="
-HNKX2Ymfhbg" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="HNKX2Ymfhbg" data-toggle="modal" data-target="#trailer">
     <img src="https://image.tmdb.org/t/p/w500/kV9R5h0Yct1kR8Hf8sJ1nX0Vz4x.jpg" width="220" height="342">
-    <a href="#" data-toggle="tooltip" title="An undercover MI6 agent is sent to Berlin during the Cold War to investigate the murder of a fellow agent and recover a missing list of double agents."><h3>Atomic Blonde
-    </h3></a>
+    <a href="#" data-toggle="tooltip" title="An undercover MI6 agent is sent to Berlin during the Cold War to investigate the murder of a fellow agent and recover a missing list of double agents."><h3>Atomic Blonde</h3></a>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="
-IYga2m0V2O0" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="IYga2m0V2O0" data-toggle="modal" data-target="#trailer">
     <img src="https://image.tmdb.org/t/p/w500/a3IHgSwO5jWPLcGjKqbQ7pxVGkq.jpg" width="220" height="342">
-    <a href="#" data-toggle="tooltip" title="A crime mystery set in the quiet family town of Suburbicon during the 1950s, where the best and worst of humanity is hilariously reflected through the deeds of seemingly ordinary people. When a home invasion turns deadly, a picture-perfect family turns to blackmail, revenge, and murder."><h3>Suburbicon
-    </h3></a>
+    <a href="#" data-toggle="tooltip" title="A crime mystery set in the quiet family town of Suburbicon during the 1950s, where the best and worst of humanity is hilariously reflected through the deeds of seemingly ordinary people. When a home invasion turns deadly, a picture-perfect family turns to blackmail, revenge, and murder."><h3>Suburbicon</h3></a>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="
-tVgQuZf5o1M" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="tVgQuZf5o1M" data-toggle="modal" data-target="#trailer">
     <img src="https://image.tmdb.org/t/p/w500/tEbDvivUfsCupngKIfMJJ725eAD.jpg" width="220" height="342">
-    <a href="#" data-toggle="tooltip" title="A small but brave donkey and his animal friends become the unsung heroes of the greatest story ever told, the first Christmas."><h3>The Star
-    </h3></a>
+    <a href="#" data-toggle="tooltip" title="A small but brave donkey and his animal friends become the unsung heroes of the greatest story ever told, the first Christmas."><h3>The Star</h3></a>
 </div>
 
     </div>
