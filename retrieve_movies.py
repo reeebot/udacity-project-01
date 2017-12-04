@@ -5,7 +5,7 @@
 #
 
 
-import httplib2
+import httplib
 import json
 
 
