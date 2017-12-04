@@ -1,2 +1,0 @@
-gunicorn==19.7.1
-httplib2==0.10.3
